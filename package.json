@@ -4,10 +4,8 @@
   "description": "Resources common to all Ethereum implementations",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
+    "insall": "npm run build",
     "build": "tsc -p ./tsconfig.prod.json",
     "prepublishOnly": "npm run test && npm run build",
     "coverage": "nyc npm run test && nyc report --reporter=text-lcov > .nyc_output/lcov.info",
@@ -43,7 +41,7 @@
     "url": "https://github.com/ethereumjs/ethereumjs-common/issues"
   },
   "homepage": "https://github.com/ethereumjs-ethereumjs/common",
-  "devDependencies": {
+  "dependencies": {
     "@ethereumjs/config-nyc": "^1.0.0",
     "@ethereumjs/config-prettier": "^1.0.1",
     "@ethereumjs/config-tsc": "^1.0.2",
@@ -66,6 +64,5 @@
       "name": "Holger Drewes",
       "email": "Holger.Drewes@gmail.com"
     }
-  ],
-  "dependencies": {}
+  ]
 }
