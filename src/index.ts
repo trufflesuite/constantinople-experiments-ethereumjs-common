@@ -11,7 +11,7 @@ interface hardforkOptions {
 /**
  * Common class to access chain and hardfork parameters
  */
-export class Common {
+export default class Common {
   private _hardfork: string | null
   private _supportedHardforks: Array<string>
   private _chainParams: object
